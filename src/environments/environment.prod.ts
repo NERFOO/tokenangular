@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true ,
+  urlUser : "https://apiempleadoscoreoauth.azurewebsites.net/"
 };
