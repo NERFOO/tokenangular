@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
     var password = this.password.nativeElement.value;
     var newUser = new Usuario(userName, password);
 
-    this._service.put(newUser).subscribe( res => {
+    this._service.post(newUser).subscribe( res => {
       this.token = res;
       console.log(this.token)
       localStorage.setItem('token', res.response);

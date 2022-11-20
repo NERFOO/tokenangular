@@ -8,7 +8,7 @@ import { Usuario } from '../models/usuario';
 export class UsuariosService {
     constructor(private _http : HttpClient) { }
 
-    put(usuario : Usuario) : Observable<any> {
+    post(usuario : Usuario) : Observable<any> {
         var json = JSON.stringify(usuario);
         var header = new HttpHeaders().set("Content-Type", "application/json");
 
